@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        sagarc:
+          enabled: true
+          name: sagarc
+          sudo: true
+          full_name: Sagar Chandra
+          home: /home/sagarc
+          email: Sagar.Chandra@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        sagarc:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAisOwbzClD4IdAutgEVnraTJ1nW/PA4lMWRD5HtJ1XNK2fyOolbyQvE3o+6ogeuTZK/F1PzYiM2QBFCO2jOWMGwE+71ztS4R4Z1yuAop9NoqSaUb2okgS5Cm9A7vV+l9/QE7lX9ElTEgjJNuQ5zU6yKPbgta25GmyW3ZiitKApAsnqvLXyAAtfvnSv2foWJGFCIyUzYcNelVCrsIykdFu3QOacmxKH93PGnETf8flqLFQg810afV82ohq7nQw+Kj3FktHQis0hp/Qnz4uxC5fnb1SuQFdUjx3A20SwiiesfRY8tcRRyLP9CPuBj11AYdAXhJ50UTanHzIrpfILmh6+Q== rsa-key-20170404
+          user: ${linux:system:user:sagarc}

@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        akshays:
+          enabled: true
+          name: akshays
+          sudo: true
+          full_name: Akshay Shipurkar
+          home: /home/akshays
+          email: Akshay.Shipurkar@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        akshays:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCl9hENg7wQAvFhbdBweLyW9FWIy57WaKrn2eDbqUp1BsBXIwq+XKGwrRe9ONIH4zU5B7wTVRxWHzqzYqOh6ps16I9m4sIA1WjGRqQRigtAAGWT5yowUhtl6i5GC3JUC2s9rgJnqyXqYdYvR6XW1zE+Li+wHXjl5QwWotO4Ci1UJJWp26fAbGAWIvdPZuMOIOQDsYF71srepS+2dEZED7ew8edalqu4MQlB2ZKHcbnrOdfWIxYR+kdvTyFo0RRnOLmTscdRdcT37ujG0H3mBzDCMP5bjiQRriZ38OcVFkasEHB5FpbgFSE+O6lzvNbaS+11Z8TW3gvlVcEUYz2cUy1F akshayshipurkar@akshayshipurkar-HP-EliteBook-840-G3
+          user: ${linux:system:user:akshays}

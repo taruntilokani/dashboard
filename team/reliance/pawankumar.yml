@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        pawankumar:
+          enabled: true
+          name: pawankumar
+          sudo: true
+          full_name: Pawan Kumar
+          home: /home/pawankumar
+          email: Pawan18.Kumar@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        pawankumar:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA0XsXUkQH1sftHqKE+X0sR2Uo695CCLPeP80CgRJ9K11dLOwuNWgwVWhSNIka0rWrkp0z9dS0uEHWmi3/nLWq95nrhuTGM71eqxGO7z+KxQC0b9UL7hwx4vYlNAcuTLaFyS3QPSOsBL/utRu42Wvbq2O//GjQ0PI0tSWGpDQQY7lPjrZzaOXdBERvQLNBR+N5tKpAfIRprBFiZHwg+FQthHh7S7sim+9WJwKdNfJlHY7V1W0F12jrtt9aiJJo79B31yw4Cj95QTyRXEhH9sREzC254Erj+cxrD9kXrFG0YCql6PoTGfBdayd8HTgDMekxv81LPCKHfLsUq5dRcFjWwQ==
+          user: ${linux:system:user:pawankumar}

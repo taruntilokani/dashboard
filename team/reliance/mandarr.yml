@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        mandarr:
+          enabled: true
+          name: mandarr
+          sudo: true
+          full_name: Mandar Rane
+          home: /home/mandarr
+          email: Mandar1.Rane@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        mandarr:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAnlKduTRHFODlmfnQo4/10WhnNbvz/hqee3SBa1DcdR1GSgbd0fAHCnpk0WP5YZOE7oOT3H/950NfU+PsCqaHLsgr/1L80Hj2cxfgumIicbProimUqCoheg9o555ia/SXI8JegzqG0xmJip9dPjzC2HFZAqgLR4e+1QYNtJE2USvawGiWVbwddACKJYfWL/NAy8zRDGheW5Ke2C+TdcDZrCgNC/gaetl1lHw9UjpUuOHFjQENTUKWMWQwa5stUZeTCvuhHZcnWiFikThZGb47k2Z/L+XbF+8ayt09y0FNKqJinpJc+7JOcDhttW5dVt5HXV2j2U2muaweBBDnOvwTNQ== 
+          user: ${linux:system:user:mandarr}

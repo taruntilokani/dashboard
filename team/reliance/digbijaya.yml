@@ -1,0 +1,21 @@
+parameters:
+  linux:
+    system:
+      user:
+        digbijaya:
+          enabled: true
+          name: digbijaya
+          sudo: true
+          full_name: digbijaya biswal
+          home: /home/digbijaya
+          email: digbijaya.biswal@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        digbijaya:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAg2jq/Z66AcolZfByK2YwiPipJ5iMMOM2SSOaKtfe/BDPQWAt/H8awHUwE8TGDpI2dTocERERouICQXsUx1Eq/KoDCQxhU7JGqGOoWyS26fqOEpaRvG6TeO2RD/P/Y8SOEEkKb08nL9mBxzCSuB4NUxFY5JgGmdASnonk0TP8Vin9I6t10CBcTZVSs6n2sPn0DZogXTfe9tk6V9FqVvkIM4I5ilBlevklNTyJMEVNIQHd12KhtMAcOJ47jzENpfJ9IZi02VO7iA+g2szhzU968kUmeex1Vt3CVnEkIdX99LzN1sqKGUN8j9ROTl/9GosdCC83uOZFv1ff4X9JRZLqEQ==
+          user: ${linux:system:user:digbijaya}
+

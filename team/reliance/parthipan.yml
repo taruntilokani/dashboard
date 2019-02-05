@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        parthipan:
+          enabled: true
+          name: parthipan
+          sudo: false
+          full_name: Parthipan Gounder
+          home: /home/parthipan
+          email: arthipan.gounder@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        parthipan:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDwSwsowJMXCLiY/4lvhmN2HN59/lEQ6/Q0Qm1Y+918iDlSY7vBmGDABIUesV5J8Zx6q4DuDL53ohgOPV+88mIdUnY4P7rMNqVxjt2Nzwrckz5N1YnJAowAA+0pAZQGUGIYFsUX+uo2vJc25MlcNJAet9WnR8NHY9tkgHsNj/y2NUMDEbYx1zJmZS9O+/C50aY/ZDpK8KIoDSQK1HRDCy95ejCA84dbp6ihKRdxeJHc9uPeu+h/uwTPeGD4Yh0h3Fq7uJ5fv9dH08kgU4xNTwejlN4Z32TpTcS77bsQR/lAjfQosKk58gLjBLmzBVGzQ1N+zeIY6cIDOZ5PEmb7Kk/L parthipan.gounder@ril.com
+          user: ${linux:system:user:parthipan}

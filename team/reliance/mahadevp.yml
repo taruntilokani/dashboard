@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        mahadevp:
+          enabled: true
+          name: mahadevp
+          sudo: true
+          full_name: Mahadev Patil
+          home: /home/mahadevp
+          email: Mahadev.Patil@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        mahadevp:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAqPe22sB/vbb2eUu3LT7vY4uHzfZEfmv42vW2aJnzJVVYz4Tu8qrsJ2bOr56KhhICHuAdEO366XjR7YvKRV/QxF6SkvIs6LaPI0sFNJmvDR5nyd+LBmdyOmGF3+xGkCi7et0HdyNj4OwZh8eM67tbI1V8jgm59wjFE9FGnBUzyPMVYROYMjHIjaM/9zWu4BHBAc0ue5RuDsPKb7dEfz+Hv70fMG+GiNFql6OtpQDanqxjQZ9EpRum88DM3ZJxZxHZDN6XN71sfc7Bn31gackpm9rH3hFz7cZlYUNyY3A5eEwrKmaa2NeVP8n8T+ViTKUD98rBvtwzjknl8tWqeUjxOw== rsa-key-20180620
+          user: ${linux:system:user:mahadevp}

@@ -1,0 +1,21 @@
+parameters:
+  linux:
+    system:
+      user:
+        madhan:
+          enabled: true
+          name: madhan
+          sudo: true
+          full_name: Madhan Nagaiah
+          home: /home/madhan
+          email: Madhan.Nagaiah@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        swamir:
+          enabled: true
+          public_keys:
+           - key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCuIVGCXBHfDjpDc7eaIXen9LzBSw0l4ZVyMH7IppI3vabIqkEWK7tkyQzPadzIazQnnYr5uJwz+Lyq0bXvI4OgHV7UlLhY5I6jhh2q/YN3GxSA4gfYojRg+EsygXOnPYLqpkUMk3RCSA2S9H2mNmtR3CukjefiPJcG4P5IsXOZNumfhBBtXwCBOsRAxTfv3JzFPnbL0DgyqdQW943iCM4eesfuxxLSX2lR4X8q6eIKAwQiPTQN8n9H7avtuliKrCfk9qlMPeU/W1kL5+jHHe734Mdtlpu4IGxFZde7V0bg1b8pJ4D5ABNN8UIZRr9B/nXvLsUBp/ukP63smNYojOhojMP5stBZn+YSoxiOb50stBht7RNEomAsItTvkrBibYXBVZaHvMoBdrh27HcSMetqEeZi0x0Xtxbx975vib34r8C+pDM8aSWLk6hBU2jsc3l6/+7iiFPaWm2kAn4sm7VKC4tsEEvcGyZZxcyrJb7b4kZRkWo3C3L2+2at0HKASXZGj4Q9VJBEnHaQN0kZoURsqxNLGAyHMSnSF42fxkUjbKysO0Bse4qNoPIADlZzipPD9o2ntzMmfE3RW1HHs+ZcBIXADX+gqhEFnr/Ddiwfv4aAgKY9JcrytpQJLSfi4hBXiivyakKKIPHA1USeaXUHT+X+HHOESP5D/cAPnd/J9Q== ubuntu@slave
+          user: ${linux:system:user:madhan}
+

@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        rajeevb:
+          enabled: true
+          name: rajeevb
+          sudo: true
+          full_name: Rajeev SBansal
+          home: /home/rajeevb
+          email: Rajeev.S.Bansal@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        rajeevb:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7Q8kyXVhvDO6Lm8KCyBr5h5sDfqN5EcD3woEGm6aHmxLhdWOMx/HM006Cks//SOwTHSBCPWkAit/3+TzBz8Ka8/AZSKdd+Z3a8FSU4ATthiMVfu3vm+ZmGBMU3MjQtlD6BqEGeagRwvxscHF+C+udBLzKCtsXDef6iUKGihpcMyz3DDpVfmR8LCBNDtBR0YRWXBcCYmS2Qhdq8BBOGYnArg77yeyK7EZZAthD0rE0S78wPbztUbvVO9xt+/02m1AbHi5xAk1KBoz6S6/F/1AEQ8hP2lWIjgLaTC0auqF6w8+TZU88TwkvkxLdWcSt8Loi7sOo3HkZrJC8mblf5jYJ
+          user: ${linux:system:user:rajeevb}

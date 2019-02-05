@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        prakash:
+          enabled: true
+          name: prakash
+          sudo: true
+          full_name: prakash periyasamy
+          home: /home/prakash
+          email: prakash.periyasamy@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        prakash:
+          enabled: true
+          public_keys:
+           - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAm4BdufGpm0dVn9nwvg8tEld5LEsMLFirzULlEKkbYBz5E9W+RRJL4UUHSZ105v2kWRyIYxmJSuLIx8kKZX87sc5KCHI/4u4VH08RGdbohf0YX2/N2gUY7vZAlfXLaRTzWKh/xZ2hc4CjUs/kGWILJxQFpRzCDehXYL7MByCTxmCvFEksJtw+8XVIGmJMw3umizk8DU1j0fwJNyou72lKMiyYqXCE6fl+askYc9K3MVT6CkhsZITX7nMKWGrzEAg80D+FBZNNF1hw/wBAWCM1W6uZngMBlu7B71AambsG8DD69inxiZFBtBPr38Jrci8y0/tcU44qwhs522j/LcXzYQ==
+          user: ${linux:system:user:prakash}

@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        dikshantc:
+          enabled: true
+          name: dikshantc
+          sudo: true
+          full_name: Dikshant Chavan
+          home: /home/dikshantc
+          email: Dikshant.Chavan@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        dikshantc:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA40aaJLwoB61jHf/EnCKJIzZLNCAa2qaVsFbpO2DIqtBgNh1I6Dl7BywxCt60w0HwQ0b8AgtWZoe6WHXWQNKFyiqp3baGKoRFNCGYKWG1A8pRknZKLxXgMFFQmuCnZ2Fywjez3bZGBW0ReCIduQablm3/rGied7bJ1BMZZO4ncbrU8kxWc4gU1h0QZy0g45Fvj7gESxroJ7u4MZnLXkZBT6jRSq8JU254RzJqyLRlv5BfYXH4qyV2rGiFGDuh7XuUcgNMbLiu0VK37Znl8JdzcDFJn4TmI0tS1axc/appYaAgr+y0SmPPWkS8WE8WvMSnW7ctnHK+qrL2XZfguFiHMw==
+          user: ${linux:system:user:dikshantc}

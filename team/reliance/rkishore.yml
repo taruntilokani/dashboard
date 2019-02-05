@@ -1,0 +1,19 @@
+parameters:
+  linux:
+    system:
+      user:
+        rkishore:
+          enabled: true
+          name: rkishore
+          sudo: true
+          full_name: Raj Kishore
+          home: /home/rkishore
+          email: raj1.kishore@ril.com
+  openssh:
+    server:
+      user:
+        rkishore:
+          enabled: ${linux:system:user:rkishore:enabled}
+          public_keys:
+            - key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWH/nbA0ug+NnSZL1CtTt4JCdSqEmnBzjl9I5aZpGXxjFWW5gB8qHs/nJuijqm4WiM9/trgHtCSV7abpPF+ti7TGYKUn+fd4Q392yVjE3wmTNzM1WdYiHKZ+4ZqHOqVe74L76X7DFwX23UsTbcczuvpr2JxkEHQc2bcgRi6+wACUip/oHL4E9LWG5NTJbrH1YSkRDz4c0dHV1jurVfEgiREANYZIZOmlON8uf/5f9ot1Posk/aNViLUdmybKzSId8mpEe7XvfQ/bjrFi005mZyA1t8BkmOksm2sgNxH04lh9uRXzsb2LBwrDjAQhULs4cSQgeZSEuTzuIWk1uBhlSt root@jstoolserver"
+          user: ${linux:system:user:rkishore}

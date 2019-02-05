@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        nitishc:
+          enabled: true
+          name: nitishc
+          sudo: true
+          full_name: Nitish Chauhan
+          home: /home/nitishc
+          email: Nitish.Chauhan@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        nitishc:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8kjYC6HpNIrC72Y3lM/Gb6ByiziYCXPoCpZPV+WVNHro/AAiJnNWa5/6PJgWbZcCbHwLgoeK0r9THMfyMjzW9/knYym//vo+vdUn1HljfGamrrsIrmiCi1qnC54qR3AxVXjGpmP3aHqMMETqjh5pp1zzCWkf7nOfQxK++Ez1FAsGesyhUuGtkb3yIWngROLUpGF/iJrcwKFywNIzwkzyPM/FWujscuKfe3vMmSJOk65FdXtGZTWAIR0Dg3fEgu0ZyZd4YR3b3FPATOT9becT/wUP7+AyacQXzKgJ1EUeYNlI6P8DCiGo0JmXWoj48Mm0/FUG3ZhbsoeFkknDwANz9 nitish@nitish-HP-EliteBook-840-G3
+          user: ${linux:system:user:nitishc}

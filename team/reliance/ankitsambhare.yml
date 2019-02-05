@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        ankits:
+          enabled: true
+          name: ankits
+          sudo: true
+          full_name: Ankit Sambhare
+          home: /home/ankits
+          email: Ankit1.Sambhare@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        ankits:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAnHdnFY/a9/cWC7T4IHY6Fh8lUwyqUVV2+L3mVTU6z39gTTnPv2VnTSqJlQAVZSiKpClsX9tDtNphLsHi1RWuC49jkoQ7coQGG1K9vgwQMpmfxBfuvHlii3f6FuSJyfpRk6Nib1E+xXgpId97Qm80veVWgH+d1gDzYI1mTNDlJ1AiTgJJdMJdMthuTb2rvclCh9dPlvcHxvl9OhmPRn+wRX+Wa/qNWznyivBVcI3z+76hGhKWt20ihMhZIhIbEUVEZTX44Jh5KN9ccx2pC1q+WQxK0rAllKIqjcLoBchld2iYZ00b5tovFpy70ntLK/GiUInVrMxKRzwT45gjKycX0Q==
+          user: ${linux:system:user:ankits}

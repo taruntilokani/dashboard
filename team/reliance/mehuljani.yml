@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        mehulj:
+          enabled: true
+          name: mehulj
+          sudo: true
+          full_name: Mehul Jani
+          home: /home/mehulj
+          email: Mehul1.Jani@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        mehulj:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAojD5bITRbUmeByHT2AuE/UgrYLGKuMGrE5Fyw029UyxtruexcekJUAtbm/mj6srCPdvgJ9s1QTs/j+8Fy37I7ZjFQ4rJWQUTpvgM/SuIxVyTvh6zbAl7oURe3IyD1nT1KfggijeMygadUJW+Xa3Dxoc5yOqA7nBWu5moZSXEofzjQcdVQ5s3JQAtygzUmop22SULBwOxgm4Z5OUaWJ607U/takFD7hoIREX6yEJl3XlU/qjyBMAz6SUsCMeG6sDOZTocsvNHlsKF0T2GJNwdfp5eXdtd+Dav2gU9Apd5mk4QCSmFPIwmHD5KAwUiJt3iQnF3+HdbydcXY2eYNL42Dw==
+          user: ${linux:system:user:mehulj}

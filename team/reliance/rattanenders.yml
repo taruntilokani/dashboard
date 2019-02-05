@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        rattanenders:
+          enabled: true
+          name: rattanenders
+          sudo: true
+          full_name: Rattanender Sharma
+          home: /home/rattanenders
+          email: Rattanender.Sharma@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        rattanenders:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAh3HHenK2S8+M32r+2GFUh+LK1/1Q++JGwER1GRXa7O5EEdyxIbvs5SdNNpsFu+qCg8RIKEPlzV2RghQYt+VpHE3ZZbqPaZn96wlPdbV+BAu+25DO9q3uklGz6dv/Pu7R5MMPR3o+kdbrWPm8PFBOo512v5x9teMFjwgJTxwIukiKRKFMgtkuKDINnOA3IMia9iQ/62BFEdd0+iCR6KadEUaHNvfpygcXEEipDqnURXnsislFL3tGXDbeO74LkZqs1eqnL7q4Vy+2xhr/ZYNPCsaFwnFrtCI4z3dXY0iLEPs6holXG7sC4ikEpPQPkiRzcLtqTzf7zKY9V5IQ8AA2uQ== 
+          user: ${linux:system:user:rattanenders}

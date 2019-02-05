@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        manasis:
+          enabled: true
+          name: manasis
+          sudo: true
+          full_name: Manasi Shah
+          home: /home/manasis
+          email: Manasi.Shah@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        manasis:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAtY70Jr4qDWwkEuk1tap+SZcZc1nRzzcGAyUIz+wqvPpoV2o/ynjt1f72qiIjVqgMvCO2RliZCx9mO0STq34ygagJsfdqxEVm/tSSiR9ptIzFfAH9nLQ+QKDf4+MT0WwYF9Iqqqn9FH9dp7IHSoVWmczXARGJQz9MJms/CfrX+oRhldzAbsklyA0yPpDlFXtwiVN1dpCrU3lWo8Ih0K6xwKqmYGOLUbqz5JPRXi3xI5w+gHzAo593iXPcP5ScMS/ARreglCDHCHit4Gjsyqqk0uz2O4LRQcYm2Qq5gbpttSRzJe3LszntlRNTd7k0ABCjCcs8SVx6MNJPxAnvn4kf6Q==
+          user: ${linux:system:user:manasis}

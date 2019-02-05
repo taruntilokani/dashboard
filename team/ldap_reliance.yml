@@ -1,0 +1,500 @@
+classes:
+  - system.openldap.client.people
+  - system.openldap.client.groups.mirantis
+parameters:
+  openldap:
+    client:
+      entry:
+        groups:
+          entry:
+            mirantis:
+              attr:
+                memberUid:
+                  - jayeshc
+                  - mayankkapoor
+                  - praveend
+                  - harshit.t.shah
+                  - alpasaproo
+                  - rajeevb
+                  - jitendram
+                  - swamireddy
+                  - manasishah
+                  - hardikvdesai
+                  - parthipan
+                  - rahul
+                  - pandym
+                  - pawankumar
+                  - saket
+                  - dinesh
+                  - ssharma
+                  - rkishore
+                  - nbhargava
+                  - madhannagaiah
+                  - nitishc
+                  - priyaranjandas
+                  - swapnilcarvalho
+                  - prakashperiyasamy
+                  - digbijaya
+                  - frigendabre
+                  - ankits
+        people:
+          entry:
+            jayeshc:
+              attr:
+                uid: jayeshc
+                userPassword: '{CRYPT}$6$rounds=500000$rihGkwWDVJ0tCQqh$3KhCOwiT260Ze6DlCaQfZ57pdVwvOy1o8bRZHLgvFz4qoeebehRdT8jTsgzRjBBEnnpgsyEIui6LXlWFkdXzL.'
+                uidNumber: 20054
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "Jayesh Chaudhari"
+                givenName: Jayesh
+                sn: Chaudhari
+                homeDirectory: /home/jayeshc
+                loginShell: /bin/bash
+                mail: jayesh1.chaudhari@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            mayankkapoor:
+              attr:
+                uid: mayankkapoor
+                userPassword: '{CRYPT}$6$rounds=500000$aVYwHcao9JEY.0Xd$bG6OzcvY56rsvMDKdvxe3uurQBLS.vZATBbzgrelGcXobldTr2DXGrcXUvEKr373Dzobm/VA.LRJuh/4PuWRG1'
+                uidNumber: 20055
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "Mayank Kapoor"
+                givenName: Mayank
+                sn: Kapoor
+                homeDirectory: /home/mayankkapoor
+                loginShell: /bin/bash
+                mail: mayank.kapoor@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            praveend:
+              attr:
+                uid: praveend
+                userPassword: '{CRYPT}$6$rounds=500000$zGGp2BRFqFRHzbpk$0d4rihCFIAKniOFxygIMYUIhni5NEoIpFoGwn0ynlGMn2uT0NApAEw9DEtKEVCDR6qLM1xXeyxHdxfz1vjrZK.'
+                uidNumber: 20056
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "Praveen K Dubey"
+                givenName: praveend
+                sn: Dubey
+                homeDirectory: /home/praveend
+                loginShell: /bin/bash
+                mail: praveen.k.dubey@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            harshit.t.shah:
+              attr:
+                uid: harshit.t.shah
+                userPassword: '{CRYPT}$6$rounds=500000$duaCpoQKR025Xyx3$IL8hHTGXJcPCQZR2LrQnrNWncilE9oM5y2HAwj2qqQ5CKcDjSJrqytxWzjkj/lSUWZQWi/KfwSxXLcTqHMKUD/'
+                uidNumber: 20057
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "Harshit T Shah"
+                givenName: Harshit
+                sn: Shah
+                homeDirectory: /home/harshit.t.shah
+                loginShell: /bin/bash
+                mail: harshit.t.shah@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            alpasaproo:
+              attr:
+                uid: alpasaproo
+                userPassword: '{CRYPT}$6$rounds=500000$lnY1EG6Nr/IWkxuI$5dnbDgkEn/q1f2ppSAEg6wSObm7DQ.Q1sGHeecbGNgPhYe9A.dsQs5lL9p60MBjnomCfZAHy9eI01Qi7sW5Uo0'
+                uidNumber: 20058
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "Alpa Saproo"
+                givenName: Alpa
+                sn: Saproo
+                homeDirectory: /home/alpasaproo
+                loginShell: /bin/bash
+                mail: alpa.saproo@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            jitendram:
+              attr:
+                uid: jitendram
+                userPassword: '{CRYPT}$6$rounds=500000$91XI4zI9vL9wRUCP$tJP9DMpSU21oyCJZCAm02zpERu7Y1uaPxTW9LDQSLcd6PpO6L5zPb8yWej/Yfqzm2RWeURe6jyX67QQ5/8QRr0'
+                uidNumber: 20059
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "Jitendra Mhatre"
+                givenName: Jitendra
+                sn: Mhatre
+                homeDirectory: /home/jitendram
+                loginShell: /bin/bash
+                mail: jitendra.mhatre@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            rajeevb:
+              attr:
+                uid: rajeevb
+                userPassword: '{CRYPT}$6$rounds=500000$QOWE/b.ZXEo9jmK5$N7KeECqPH8qRvCDmOB5djxGjL8O5OGAPQYBsRBuYXwD/7KUO.KwiCKvPT7qOh0IJOtEvsmHlFRxhvGPGLwUcd1'
+                uidNumber: 20060
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "Rajeev Bansal"
+                givenName: Rajeev
+                sn: Bansal
+                homeDirectory: /home/rajeevb
+                loginShell: /bin/bash
+                mail: rajeev.s.bansal@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            swamireddy:
+              attr:
+                uid: swamireddy
+                userPassword: '{CRYPT}$6$rounds=500000$EnRs5qE54wBZAWSH$T06AvSkDIJS90t.boUqmCATMhGT3.mmxAn79/6w57Sk0bHZ5exhz2owuEl518hGG.IaE14Xf97gHmGaAZMX4u/'
+                uidNumber: 20061
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "Swami Reddy"
+                givenName: Swami
+                sn: Reddy
+                homeDirectory: /home/swamireddy
+                loginShell: /bin/bash
+                mail: swami.reddy@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            manasishah:
+              attr:
+                uid: manasishah
+                userPassword: '{CRYPT}$6$rounds=500000$Zf9zylrTqgNVvqBr$LHzRmPghH5G67WWYdX6KMySZICtq.RaPrnNfkkEgCD6elyhkUzAbxbSo3W6saOZESU4P7Kd3wPzUyW16xhlIj/'
+                uidNumber: 20062
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "Manasi Shah"
+                givenName: Manasi
+                sn: Shah
+                homeDirectory: /home/manasis
+                loginShell: /bin/bash
+                mail: manasi.shah@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            hardikvdesai:
+              attr:
+                uid: hardikvdesai
+                userPassword: '{CRYPT}$6$rounds=500000$RW2XWdwFoKTlMvpl$S3wN4hl3rRUEkiuzj/RjwqcbRpdM4uNbFUHO82uVFJqyUGBmb4PSRpk7iiP072fowZgtqfdCVcUYRItYpqebN1'
+                uidNumber: 20063
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "Hardik Desai"
+                givenName: Hardik
+                sn: Desai
+                homeDirectory: /home/hardikvd
+                loginShell: /bin/bash
+                mail: hardikv.desai@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            parthipan:
+              attr:
+                uid: parthipan
+                userPassword: '{CRYPT}$6$rounds=500000$tLypjxnusE2juzt6$wT1GhaoMhD..qBxhLV3tAFjeTsoG5XfoGqo7wf5I//kZ9ANWDo0qa3tIYL.YJCq2VN4Ar5ylLCi0MpVCKrqfI1'
+                uidNumber: 20064
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "Parthipan Gounder"
+                givenName: Parthipan
+                sn: Gounder
+                homeDirectory: /home/parthipan
+                loginShell: /bin/bash
+                mail: parthipan.gounder@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            rahul:
+              attr:
+                uid: rahul
+                userPassword: '{CRYPT}$6$rounds=500000$tLypjxnusE2juzt6$wT1GhaoMhD..qBxhLV3tAFjeTsoG5XfoGqo7wf5I//kZ9ANWDo0qa3tIYL.YJCq2VN4Ar5ylLCi0MpVCKrqfI1'
+                uidNumber: 20065
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "Rahul Anand"
+                givenName: Rahul
+                sn: Anand
+                homeDirectory: /home/rahul
+                loginShell: /bin/bash
+                mail: rahul5.anand@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            pandym:
+               attr:
+                 uid: pandym
+                 userPassword: '{CRYPT}$6$rounds=500000$UYJXQMx303rDaRQu$aXzQDPoDdix1HlQ/qIs/1/MHP9yoJKcwBs5Wg7b/MPmTCNpYWlOvxC6ZRdRA7ghRr5RYKSDnePIRwL0YCU3Yq1'
+                 uidNumber: 20066
+                 gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                 gecos: "Pandiyan Muthuraman"
+                 givenName: Pandiyan
+                 sn: Muthuraman
+                 homeDirectory: /home/pandym
+                 loginShell: /bin/bash
+                 mail: pandiyan.muthuraman@ril.com
+               classes:
+                 - posixAccount
+                 - inetOrgPerson
+                 - top
+                 - shadowAccount
+            pawankumar:
+               attr:
+                 uid: pawankumar
+                 userPassword: '{CRYPT}$6$rounds=500000$8xzEqpfj9jdsf9lQ$MO3Ac5Y1kjPGZ6GKr2QSiYelCmZ.9uetuB.XqwuEBQXEm9XGMCs.mMS.axYyWCYO5HXa1AzE5TosdP9BO1rux1'
+                 uidNumber: 20067
+                 gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                 gecos: "Pawan Kumar"
+                 givenName: Pawan
+                 sn: Kumar
+                 homeDirectory: /home/pawankumar
+                 loginShell: /bin/bash
+                 mail: pawan18.kumar@ril.com
+               classes:
+                 - posixAccount
+                 - inetOrgPerson
+                 - top
+                 - shadowAccount
+            saket:
+               attr:
+                 uid: saket
+                 userPassword: '{CRYPT}$6$rounds=500000$tLypjxnusE2juzt6$wT1GhaoMhD..qBxhLV3tAFjeTsoG5XfoGqo7wf5I//kZ9ANWDo0qa3tIYL.YJCq2VN4Ar5ylLCi0MpVCKrqfI1'
+                 uidNumber: 20068
+                 gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                 gecos: "Saket Kumar"
+                 givenName: Saket
+                 sn: Kumar
+                 homeDirectory: /home/saket
+                 loginShell: /bin/bash
+                 mail: saket5.kumar@ril.com
+               classes:
+                 - posixAccount
+                 - inetOrgPerson
+                 - top
+                 - shadowAccount
+            dinesh:
+               attr:
+                 uid: dinesh
+                 userPassword: '{CRYPT}$6$rounds=500000$tLypjxnusE2juzt6$wT1GhaoMhD..qBxhLV3tAFjeTsoG5XfoGqo7wf5I//kZ9ANWDo0qa3tIYL.YJCq2VN4Ar5ylLCi0MpVCKrqfI1'
+                 uidNumber: 20069
+                 gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                 gecos: "Dinesh Kumar"
+                 givenName: Dinesh
+                 sn: Kumar
+                 homeDirectory: /home/Dinesh
+                 loginShell: /bin/bash
+                 mail: Dinesh21.Kumar@ril.com
+               classes:
+                 - posixAccount
+                 - inetOrgPerson
+                 - top
+                 - shadowAccount
+            ssharma:
+              attr:
+                uid: ssharma
+                userPassword: '{CRYPT}$6$rounds=500000$OOphnRUFd5Rq8VoM$QFvf79PYvOcMOb35P35rcTEBr9JdM6OMtR.cEPrxmYsIDXk5PUwYiHnGklIqhX0uPW.5UNXpQ1sJgRJCF0mrP1'
+                uidNumber: 20070
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "Sudhanshu Sharma"
+                givenName: Sudhanshu
+                sn: Sharma
+                homeDirectory: /home/ssharma
+                loginShell: /bin/bash
+                mail: sudhanshu.m.sharma@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            rkishore:
+              attr:
+                uid: rkishore
+                userPassword: '{CRYPT}$6$rounds=500000$u5MZ9DhwcqOdz4xI$JsnqO3RVTmxPfv1nN7N2Tf19va0B/aX8m/Nj4WBhnXIuqxryn9TfNXXHNebax.nqdOg7tIiS3UCHiiA78YRGB0'
+                uidNumber: 20071
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "Raj Kishore"
+                givenName: Raj
+                sn: Kishore
+                homeDirectory: /home/rkishore
+                loginShell: /bin/bash
+                mail: raj1.kishore@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            nbhargava:
+              attr:
+                uid: nbhargava
+                userPassword: '{CRYPT}$6$rounds=500000$UDylLklBPSh7k.NY$ynwDl/C60RC.9uM2gSjTRTjHGtA7KiiTw6HOEnyg7BtnURhGqC8DsIPxthfEgHPfPNNeYdYvgip0bajQoleoi/'
+                uidNumber: 20072
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "Nikhil Bhargava"
+                givenName: Nikhil
+                sn: Bhargava
+                homeDirectory: /home/nbhargava
+                loginShell: /bin/bash
+                mail: nikhil1.bhargava@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            madhannagaiah:
+              attr:
+                uid: madhannagaiah
+                userPassword: '{CRYPT}$6$rounds=500000$CYtq8Sn5Jvm9BaAt$3FvoSmXfTVT7d49nMFz2fM/dBjTMziqLQKUuB07xHUPUi8PWAoTbDXAqjjvFU9lahu87c3D3JCKI2UY/JIVKq/'
+                uidNumber: 20073
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "Madhan Nagaiah"
+                givenName: Madhan
+                sn: Nagaiah
+                homeDirectory: /home/madhannagaiah
+                loginShell: /bin/bash
+                mail: madhan.nagaiah@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            ankits:
+              attr:
+                uid: ankits
+                userPassword: '{CRYPT}$6$rounds=500000$JKcCexn1aYifXR5y$q.sY0Z5KiQEe1c9QtB5SnrCe1SQTjpSpe8pxmufTPBZpK/raTuOakE38Jz85Y/8hFFtN/tex0ACttcVtsVvl81'
+                uidNumber: 20074
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "Ankit Sambhare"
+                givenName: Ankit
+                sn: Sambhare
+                homeDirectory: /home/ankits
+                loginShell: /bin/bash
+                mail: ankit1.sambhare@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            nitishc:
+              attr:
+                uid: nitishc
+                userPassword: '{CRYPT}$6$rounds=500000$zO05EGTn4p51hSy0$0zypafYD0DemE1IvmdlXvXcULNGWEPhloZ8aryBJnk.a4OCNwhUUWncqnp/gWjCnrF1bdlXNEu7D2Uzsxctuz0'
+                uidNumber: 20075
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "Nitish Chauhan"
+                givenName: Nitish
+                sn: Chauhan
+                homeDirectory: /home/nitishc
+                loginShell: /bin/bash
+                mail: nitish.chauhan@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            priyaranjandas:
+              attr:
+                uid: priyaranjandas
+                userPassword: '{CRYPT}$6$rounds=500000$wEiiwiKbD4COGa7k$JwYZU9z8AV5ydywalNvy5coNuurQWgOMPhlmhaE2SkTE90Ot9YL8To0PIe1AXSK90OpI6i1UjClsSZWZreKJQ'
+                uidNumber: 20076
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "Priyaranjan Das"
+                givenName: Priyaranjan
+                sn: Das
+                homeDirectory: /home/priyaranjandas
+                loginShell: /bin/bash
+                mail: priyaranjan2.das@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            swapnilcarvalho:
+              attr:
+                uid: swapnilcarvalho
+                userPassword: '{CRYPT}$6$rounds=500000$RocasiHYKA.7rCRd$oY.c2HqBdJ/iWdUcHu3LtQS6j7KbCpPn3YhyQUUu..BKZqQVpPXBlPyFgdV3cXpPpG4PHMi/gOkxijJIo7jWP/'
+                uidNumber: 20077
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "swapnil carvalho"
+                givenName: swapnil
+                sn: carvalho
+                homeDirectory: /home/swapnilcarvalho
+                loginShell: /bin/bash
+                mail: swapnil.carvalho@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            prakashperiyasamy:
+              attr:
+                uid: prakashperiyasamy
+                userPassword: '{CRYPT}$6$rounds=500000$.m3zUe/4dKOfkQZ8oGsVR9Xtta.xCc1ysO.Ml8G2wAJLt4I3yB7inDRI.e3gMK58QhTXFjBYYn2Qn8fwYI.G8NgZkfRTus/Qx6E3F0'
+                uidNumber: 20078
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "prakash periyasamy"
+                givenName: prakash
+                sn: periyasamy
+                homeDirectory: /home/prakashperiyasamy
+                loginShell: /bin/bash
+                mail: prakash.periyasamy@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            digbijaya:
+              attr:
+                uid: digbijaya
+                userPassword: '{CRYPT}$6$rounds=500000$hQiWZbYMBdcWsug3$SkwKpdgB0gek9F.bIYtFTc0PVmUeCAoVVDAv7fqQp216wlo4.lAnl5eAUNpOnj9euAaXAf12xX4vDmXawrFnu1'
+                uidNumber: 20079
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "digbijaya biswal"
+                givenName: digbijaya
+                sn: digbijaya
+                homeDirectory: /home/digbijaya
+                loginShell: /bin/bash
+                mail: digbijaya.biswal@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount
+            frigendabre:
+              attr:
+                uid: frigendabre
+                userPassword: '{CRYPT}$6$rounds=500000$ai8MW0YN1chUkyLr$QyU8/VlNQzlJ7jVnxmyp5DB.GK3QIoYHDhyZ6VN2KV1CVerOSeDW0b/1Y25U5bjJRdJxLS8a8E9hnpPE1gf1Y1'
+                uidNumber: 20080
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "frigen dabre"
+                givenName: frigen
+                sn: dabre
+                homeDirectory: /home/frigendabre
+                loginShell: /bin/bash
+                mail: frigen.dabre@ril.com
+              classes:
+                - posixAccount
+                - inetOrgPerson
+                - top
+                - shadowAccount

@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        saketkumar:
+          enabled: true
+          name: saketkumar
+          sudo: true
+          full_name: Saket Kumar
+          home: /home/saketkumar
+          email: Saket5.Kumar@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        saketkumar:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDDXezvwRBjWNzsXnbpauiG2pzTDzW1xgoFtc/aRbRCsZGbqS6rw1ZZLgsnV74ibneqwddKGTAWEnZ7eVIF9u/VmK49KroEagvPDIMJR9Ec0cAJaHRh4i8G7F/aQpFZ816ZYatsYp0ZP1m67SlZ1M4vX8747orjSWYzPkdetd/YZL4YJr9X4h9DApLXG0TGRxBglDkutX6nO8vJaLIIlajfghMdT/MZZWij+rAxS3oZ6Aqo1YJiMiJzKSeqzYr8CxKBlXHY51CteTD2+Xyf4lCujaA5+iUk/maYugCXosFYcgH5xqXhKmE2ZhhE9/luVKtoCfUfmdJLVwsRTgR5EJox
+          user: ${linux:system:user:saketkumar}

@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        tarunt:
+          enabled: true
+          name: tarunt
+          sudo: true
+          full_name: Tarun Tilokani
+          home: /home/tarunt
+          email: Tarun.Tilokani@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        tarunt:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDYCtQQ8bW1RPCakeILIrcJwf+K0oHhOVsTJNcvbBumo8GWv8anTW7PUB8ym1J2SBdODpphagY/3zVkG5LRHQLO2SJyo6AetiRx/gl0sebL1sa4Wk2ZAudmTQF6DNpe10UaQIhUEbUSAAGIuWlMcYbrWIOA9XFEmM4ijZ72J1ELrnx+FUhoUf3dtzVDTtrY/v/e6I2e4bkpPQPdv8bmYdVXIPWthuIpZ5NGQcdij9bHWjEOr3qHX8GPAaYPg6c517aS2nXeiNoTRNByaj7vUGLFmz6LLPzKPgucrVoImIvi3bXw/UAxU1C5YzzIgRG7+q05ieue/TnX8/v1oW2GcpJN
+          user: ${linux:system:user:tarunt}

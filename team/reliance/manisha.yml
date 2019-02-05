@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        manisha:
+          enabled: true
+          name: manisha
+          sudo: true
+          full_name: manisha kamble
+          home: /home/manisha
+          email: manisha.kamble@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        manisha:
+          enabled: true
+          public_keys:
+           - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAqBgwbRb7aCgKV1KXNAYjbAFFcOWkZz/PaxNTr52ZfqYm3VpaiaU7IjHaI/7louHio5P6+cVdFpImCVjHyIL6Daiin9lPzK89OW0ULYYQNHMKMfVCT9htmYFMSN3uZSvEd99aJfHycfnzs/fP9fispLyoGpTs8xiJlJGf5uCr/PAPzGVlmOrE2eoJDY6z5aUn2sn7qZKGM7zKGRO6HSFukbQfWJTloDxS4+lM4wR+famVgFH9whh8V6eqs1XsGgiEcZaBuCudHTcvzKN3FCrAF+0hSyluZpDmXpv2yD0aaZ7T6F07MELXrrKySdrrCbbHHKb1O/RFxere5+i7ro+u0w==
+          user: ${linux:system:user:manisha}

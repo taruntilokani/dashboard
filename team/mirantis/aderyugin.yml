@@ -1,0 +1,21 @@
+parameters:
+  linux:
+    system:
+      user:
+        aderyugin:
+          enabled: true
+          full_name: "Alexey Deryugin"
+          home: /home/aderyugin
+          name: aderyugin
+          sudo: true
+          email: aderyugin@mirantis.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        aderyugin:
+          enabled: true
+          public_keys:
+          - key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8DbtWIe6I+ibUgU0Ho4f/E77ATge7lR+Hrm7sKLpiv8pTHGaFyGzX1b6NjAYlq4dCujivw2+zYCgSySX4SN3TuTvO8sZbGuXs9u9ne2geqhOCxsxgPyZnB3LwfDp/lgsUP1cfNmMGLB0IX/THeog/0+NneRu6UhdMuR9B1K/MMLA2lxtbfVYmmKUqcgRFfjXTVRwr0vkPgymV/gdf1qzFpDuym72C23ydXNowXU0E6yKID/dIynugpJzR9Qxj/MasMbAcQWWzE7eNHeQ80e6pG6/F3Oyw3AeToDQvaHPSzJGXsCX4g6KHcTw1NudcIA3HehKCDtIJkr0JXJ82kAef aderiugin@mirantis.com"
+          user: ${linux:system:user:aderyugin}
+

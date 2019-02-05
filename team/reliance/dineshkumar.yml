@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        dineshkumar:
+          enabled: true
+          name: dineshkumar
+          sudo: true
+          full_name: Dinesh Kumar
+          home: /home/dineshkumar
+          email: Dinesh21.Kumar@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        dineshkumar:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDt9T0u04IzGpu2zfvF6b8VtCmMVu40VMQk+rieEChjI2BqI/R92srARRA/Dy98gBBLagKWJBWelSPN1b8VvNZHGU5WZKu5BONUzDNoGBJRsfX1m8/iuROsdQBhtlAl7u/2WIlyQGcUHbwlhOPwuNft8uUL6sxuzMuWl48qZcmqfUgWoVJJzirA8A3Gu7NAweUEYZTmUHIu/41kjZdUfu7bNX1hSYJmYqvo86mM+ake2d1r7n9bOWWL94XTdJq4mKuWAxd2LA1wIAFIGlNXeVcEZ2hmovSYeBOFEdBegp42gOu+kxyzg+0GOJxclKaRrpQXMTFCpglBX/2zNGixgtlD
+          user: ${linux:system:user:dineshkumar}

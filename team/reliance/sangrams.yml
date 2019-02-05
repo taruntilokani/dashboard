@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        sangrams:
+          enabled: true
+          name: sangrams
+          sudo: true
+          full_name: Sangram Satapathy
+          home: /home/sangrams
+          email: Sangram.Satapathy@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        sangrams:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA659A5kWSjGrUL7vUtFkNQk9hy7+RxqM2RncdEo16j4WtyayjiQJHn+lGq2LxpqIV6DlJk98Qp00KFtDS8RWs5FnWEpu0OjOJQJmHlFJyKKHR2+kWK61vZpoFi42RIKOIP7Pzg6ReCuQbWuW6/Rb/wxxxBwjwZv1NHZb0kthFXg1PWyEQVphW6aaWlpZakprAKvk+DEFmo+te5qUVmVQiwi5WqkaYmL3U8nWEdCUvUiEWgx6z7jcevGjivJVFMaKZLIVMS2gFf9pw7FK8bSzGpAzM8STRcfB6Oi7nIpQegffXO/Mj2hQIBWUjfP5J7308Uv9lJWIkeiKEMflTXeAucQ==
+          user: ${linux:system:user:sangrams}

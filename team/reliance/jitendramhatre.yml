@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        jitendram:
+          enabled: true
+          name: jitendram
+          sudo: true
+          full_name: Jitendra Mhatre
+          home: /home/jitendram
+          email: Jitendra.Mhatre@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        jitendram:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDpBVBkPMgsLmlnKQrCu9vQddpkStsRzhUm0BXIM8L8IMyqo+MnQPNyCElmMAFYVmPYdzJXBkCq6/UA8DQ9X0bVYRRFH+HL9wFLeEyeTGn0scJGq3bh5OKuwxke4SyNDhbo4v/gqVPLRXP7qTLlSbTiTvQ6N0wCno0W/cx91bU46vh0uSK1pHBIDtwj6uaNrWgdfEuOK83xBUwbaOUd6fP1aZWHoCeNbwKPhVhf6bbiLTD/ouO3E3yE66x3NJ0ssfoBTJA/L5dm9BdHtAyqdAUBludkN23AoPE8lRZprn8g40d8UsnVNts/mY37BV3W54tp0bTT3w8SAJKBqyoQjZVx
+          user: ${linux:system:user:jitendram}

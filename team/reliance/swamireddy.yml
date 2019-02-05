@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        swamir:
+          enabled: true
+          name: swamir
+          sudo: true
+          full_name: Swami Reddy
+          home: /home/swamir
+          email: Swami.Reddy@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        swamir:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQClGFa91a3fOSwREYKbkSryqsI/P1iRtXRu4SBKnStTkGHOBXIjPaGjXa1SElzl1+yRALk+99LRTRdMsSZhaVXCTYHVwy/ZCN+ykkTCFPMAbHB7/ifd/9f1Pu4A5yo0xVLq61/PROuM40TKImyi87Yv6YEITWlwHCm8u+43q8HDFN9c9y8fAisnI0qo1YCn9L6b9C6lFQkJOKsHQe3kNDtra1cre7CZ9t8hsHUuVW/L2qqeeDglyCTG77dxGP3dlSe9V8y85T75MzMkrUO3toh/0QsswDivy4fsgVLjuKFVfwxPTJSSnHyMuQgHc4OmctDfShgCFPyEobDBaoVBKCTx
+          user: ${linux:system:user:swamir}

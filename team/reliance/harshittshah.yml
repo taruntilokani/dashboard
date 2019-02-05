@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        harshits:
+          enabled: true
+          name: harshits
+          sudo: true
+          full_name: Harshit TShah
+          home: /home/harshits
+          email: Harshit.T.Shah@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        harshits:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAsjRKWzTOuSa7rtGZZrHw3F8/FKzkIq3X027mg3E10872WNuaNAdMd6a27i/1Yt1giNQr4ml+0w3D5VA77Gy02aH4ycSSHYFKedOU5kNaHJ7AxI24AKvV6qS7erC4HM2u0bsuQU341pD0s3rtkxxZ0MiMK7XW+C1S2rOht6ib3sNyox+HcdnXPiDjEieuPHI8WFs/ctg9/WgdjvDf4/IhNYkvUUsgXk6zsM+9+qB5Wx1ZzqrBYUf/Ge3jkE7QQHRzrzyRMaaZt2FeBZkHzoqQTKecaQhz/2kZCACHNouma0U2o7KwYw914jE7acW/C2xJ6x4kZzjZT5d08heWPuwoTw==
+          user: ${linux:system:user:harshits}

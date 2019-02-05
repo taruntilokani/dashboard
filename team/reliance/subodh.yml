@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        subodh:
+          enabled: true
+          name: subodh
+          sudo: true
+          full_name: subodh dadarkar
+          home: /home/subodh
+          email: subodh.dadarkar@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        subodh:
+          enabled: true
+          public_keys:
+           - key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+biLJlpVDhJtrFz7W5bsc5bfKhlX+NJ1dri6cqqvybHydWXk7a8dB1aV7wEWonr3MhvOfxQDftHkNut8tm7lctnJTaWe932FTzgui4P/3t2SsMm+okHqm/Ok7zQyYwn0gAwIePc++k+zUbeoLesNlWY0OPTb+iZ1hWCtjKLaBNg10H/Ya8mpRaNXKT8BoOWrIkPeFe1wXQBds2RWM0ETxOMI29MQ0HJlpqCyzDIMXOMmKD4ulKPjgVlTu4ZdYC6ffJ/cUPLbFZdwLR8QupiXsR6+1rAYVLPs3gBf0Sn+TLKReylkLvKmGSXyX6fxM6dRGRpbxYA9/JXnzdJY1+RVZ
+          user: ${linux:system:user:subodh}

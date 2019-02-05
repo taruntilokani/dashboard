@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        haris:
+          enabled: true
+          name: haris
+          sudo: true
+          full_name: Hari Seela
+          home: /home/haris
+          email: Hari.Seela@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        haris:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAIBeWTvBPHZJjjNoW8DxuV5uhbPYcA38ESmLVIXQqy6yaF3gnttiUJSLn0REg47tU21SM8LcpjGstIMdKoYjURPeRWGDuXuitxVO7tYB3/ZldU8rVAYCQxgJWzpMOfxOIdFm13vZWCIyZreH8Rv+ni9f9wFqwaZ1GgEnGtwjJZMJew== 
+          user: ${linux:system:user:haris}

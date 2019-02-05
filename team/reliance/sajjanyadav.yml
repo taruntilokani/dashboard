@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        sajjany:
+          enabled: true
+          name: sajjany
+          sudo: true
+          full_name: Sajjan Yadav
+          home: /home/sajjany
+          email: Sajjan.Yadav@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        sajjany:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAybo1gvJ5ARs/Y6LUp9YaCkuFwNip0tgw77AL6TGGWoVRQK45bkeClGjmmLYuUy8iDLM0tHRApGUqlwqX2y20tjgIy9oDW8/FvsRjVH1xYOWpdHI3BfN5PMxG8yYONaGI6NAnbk1gzk51lAMeNpeGeN1XJ8kRwwjrThw49E02rJqMkrCbEyk1kiRvasJEvpGyu7gptal3l0ZWk7J6gRrL6alZ8yO57D7FWMW+T8peX2pGi5hZw6WM2zT+SUtVuc3BlYH0l+jIPAOQ7gimPbu0s7h2V4PtCYZG8FHnu8+zpbW3zOynob3tdV6jMXgazOaeHca37xp1rys28bztNOYh5w==
+          user: ${linux:system:user:sajjany}

@@ -1,0 +1,19 @@
+parameters:
+  linux:
+    system:
+      user:
+        pmalhotra:
+          enabled: true
+          name: pmalhotra
+          sudo: true
+          full_name: Pawnita Malhotra
+          home: /home/pmalhotra
+          email: pawnita.malhotra@ril.com
+  openssh:
+    server:
+      user:
+        pmalhotra:
+          enabled: true
+          public_keys:
+          - key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAvZ38Sy9GmXAEumtkwXYybKbUao38STaVauLeJm8hprroQlzN1wzdT9YpUI3KUyOEN4gV6LoJTcc3rL6XEh0+Zhw6z8yqhP5lRFjR3wZTFvdIZ4WanHhV+taEciYK7ebLsoIA4Gd0OVM+QarcGOwUNvv8wdzqeXxMr3aV3c9QFBqnG6CzWCoHFFbGC2pVrJ1IBksNIHqdON2ImTDtTPKT711jrLYzpFVYHhzrF6qeWj6w+0SqlEaOxUeobcraYSkcjG+D4k/3Lt36ZeL4qqhUqsUt7p9/JD01idIDwYjVYxvzbGrAdxdsoBUTTlEUB7X5UxoWGjW3I1JesUEdsSILyw== rsa-key-20180508"
+          user: ${linux:system:user:pmalhotra}

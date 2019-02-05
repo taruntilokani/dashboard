@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        sandeepy:
+          enabled: true
+          name: sandeepy
+          sudo: true
+          full_name: Sandeep Yadav
+          home: /home/sandeepy
+          email: Sandeep10.Yadav@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        sandeepy:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAj8hNUYkM0YruEYAo+pd8Nvlt6HYcxRzrqWoZeFdlF09Kn8tF+xLyFcQYr02GYdJJ8JIMh42ELgie0xr6Wm0OVI9eHF62zUrcruqQ+yB9gLS2tQe4RkhLSFNtL18y+ORRK+2PgTjNWaNfwOGd2U1n/7YOoJzoenI1Qu/pmZsR4y/kuzsjDDo+Lqj37+86Xx2RKGbwJRIijqcbeXv1IzOxhK7yh+Sx/WgHkFgyU7h/QThrjjyDKDUA2tCAUFBSIthjTb040BM5dzPwhbnTitt7p1Vx/eVevmR02vIpEl7pLDkwsyPYyr0zkcKD+Hb44PrcBHk+zw8znRyMf1Lu5H7S1Q==
+          user: ${linux:system:user:sandeepy}

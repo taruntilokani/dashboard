@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        slystopad:
+          enabled: true
+          name: slystopad
+          sudo: true
+          full_name: Serhii Lystopad 
+          home: /home/slystopad
+          email: slystopad@mirantis.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        slystopad:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDK5d8yA345W6P4dFUPM1Z941hhA/5Ysp/934Ieuf8drOXkNkTwUN6vfYbNNOklKBzDYfaHFhY4S952Dstv9RAH6GNZqingucfWCizMxrWAQWerzgGjM8xhNJAE010Xcp11TJPqOiyiZZt5IQg9m9VPe5pilS6yaN02L9eHTIXdO6uAt3qCeolQ5GTV5G2i8Kr+LblifTjLMiySfHe8IouDDFyyua8IgWisBtREMZb7Kvt5wFAs/q5OnCsIfFweHQE1qSV5/j0R20KVd/VODiFVGMwMdE0BlcNgUK+2WVCeD8bBNKbt2WrpKZVP3NqtoCeLjRK56SkSyOWrkAPcHX4aporEUHfk9q2qk37Px7cHbeKNrBww+pG59qnes8E6LdmLpbr5Ah0q672tLH/13Siak2lUZitqQPqRfvoAAWlNNbq+0xjn5hDYAlifI3BsbeCzEtFTCM/h73CZbPrp0O9DahC1u4ieyfvm5LrZcVgtwUmXsCzUMeYZXXqWQWPCzFJLZAMgJT8dC1641M9IbzXoD4+ScusRVvcAlY0Ic1EijXf07CuMKC9V03ATKDN/omth6Qado8DCzRBIJzhxJ/+/6zv2tO1GHaDBk20lknSBp5l3RWSHIh1Fx45Kc4DA1BBakE6WrlM2HqPRRApOz4l7FOTpz3wCIxvE4vX2x+A5uQ==
+          user: ${linux:system:user:slystopad}

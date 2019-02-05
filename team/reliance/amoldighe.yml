@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        amold:
+          enabled: true
+          name: amold
+          sudo: true
+          full_name: Amol Dighe
+          home: /home/amold
+          email: Amol.Dighe@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        amold:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAksuSaPye0zG5RqHjDiO9tSE0el5CNK8arf1L4D0KFYJ2xlAouyBbYkeOq/kx/cvVPS+lYtjhYq9OQenBEDOXWabCz487bvh0Z6sKNX3WuriA3gGpkJSiLXOmEcprEpKvMPOuRGCszSsnttspn4Uqlt4UB1tvjT4eAVUTa6UoO8oKhXzYFrHroBrTvCRLdbTOaZebWR+BOKTwuKE9XdwLmHYlvDd2HWxlQbzK8IiphhLgwfYYNsaNKmjcUfh43Xq7ItfIvgCjA9CA2vI9rW+as3NHMwYHqJInjuUt9LSQb9eUpD7TKzo53zYMOCAfb8L0LSaHksVZg5IyOmUI20LmkQ==
+          user: ${linux:system:user:amold}

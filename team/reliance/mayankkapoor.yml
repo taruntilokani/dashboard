@@ -1,0 +1,20 @@
+parameters:
+   linux:
+     system:
+       user:
+         mayankkapoor:
+           enabled: true
+           name: mayankkapoor
+           sudo: true
+           full_name: Mayank Kapoor
+           home: /home/mayankkapoor
+           email: Mayank.Kapoor@ril.com
+   openssh:
+     server:
+       enabled: true
+       user:
+         mayankkapoor:
+           enabled: true
+           public_keys:
+           - key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQMtv4Wk18PVyoC8TgNr6G0pk5hF4UEtS3+DxRrlIXY+w96hpYtp4p3ifjfRmjqKgA4UPZG47Se787nsJkoy367q4Y4RVeRgrn/6hxgG0AvxKL+nsGxb71p0yvW59UfACL/5JmulQvse5Mm4fBIsxlgoNP7EJtQ5Be9hoeKx9JxMvEUchZLQHCzU77eY3Obn477CFwQCJZBLT1wKg/RkpcNWuUSVtj8RtwQRe169ibc/ngsBy8RtzdFTPRTlZzx6QLut9Ir7G5eHbtrssCUkAOY47gaWx3mRgcYV8eOwijAkntTm4jHsVj/Scn6R+Ukavc0JIh27mqZPdUVdv2fM2n mayankkapoor@Mayanks-Personal-MacBook.local
+           user: ${linux:system:user:mayankkapoor}

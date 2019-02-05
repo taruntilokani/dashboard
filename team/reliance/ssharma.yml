@@ -1,0 +1,19 @@
+parameters:
+  linux:
+    system:
+      user:
+        ssharma:
+          enabled: true
+          name: ssharma
+          sudo: true
+          full_name: Sudhanshu Sharma
+          home: /home/ssharma
+          email: sudhanshu.m.sharma@ril.com
+  openssh:
+    server:
+      user:
+        ssharma:
+          enabled: ${linux:system:user:ssharma:enabled}
+          public_keys:
+            - key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC135FQP2qhWzKv4wQv9cfgHd60lSQ43IffjWIkbFyVIGKF22gHKaXPZKLWMJug1i6gmFjdFGid40C8PAeZHGg83vTjkb9fs9feVEWpdXu1CLfXtc2T0wZKeBbRL2l72IFxtO+wiL7929aXcvSHksEpPgAwpzYNQUv6mYNW6djiHP0WOc7+ao691QL8FryGfwrtPDPmDrFfIPRu0u30r8ph24Btkm01++Grq1luiCKNa/7cXQ27o+FcyzcqKuiK51S0EHLR0sZI1W5/+NU08MoKVrd8/0CVkl9Jbg+NsbSImzpFn6JOdGJJCAI+gKS03Ft7eiwIiD20aa7LoUgOz1ZT root@jstoolserver"
+          user: ${linux:system:user:ssharma}

@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        izadorozhna:
+          enabled: true
+          full_name: "Ievgeniia Zadorozhna"
+          home: /home/izadorozhna
+          name: izadorozhna
+          sudo: true
+          email: izadorozhna@mirantis.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        anoskov:
+          enabled: true
+          public_keys:
+          - key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5qks9NQ96ks6j17I/3lq6RGX0w55xWYl9zhAeBzUtBOtsjnSbjeaeqfAh+yltGpex9+Z7MyzF3ozZtPofVeRirQRSYGNiN+azcL3+TP4zoOw4xCe+yzQ38YOi6AQXkidUCalx7sqyDSVEH14eARx92KNYaKiJUBi9375NdewtSAJSTOndCoqSSP0dY84fTVZDGXPEjTImvIP1w/Cg+hoewglzbCScd0N4RPKDcpAdjcMl9QKOCLaHWoftt+Vjg8IjiHFBkjEHvzbO60GhbcFGLO08GPlhd6hGtj0msRd6hSPVhQ2h4VsGaPcXzYuCGVhmgW5/0Je7qrk8TsxSeKsL izadorozhna@izadorozhna-pc"
+          user: ${linux:system:user:izadorozhna}

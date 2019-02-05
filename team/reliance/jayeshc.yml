@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        jayeshc:
+          enabled: true
+          name: jayeshc
+          sudo: true
+          full_name: Jayesh Chaudhari
+          home: /home/jayeshc
+          email: Jayesh1.Chaudhari@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        jayeshc:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA8pT1D9ZmAItForIRVMudGp67loKHgfXGcC15DbMBMzH/8XhoXL31xdqwSbCX3ukABY33lwAenJSNrY36c7Vava+agJAr8dTWlJNiNgfnhIvWOIHCL4P6CiM8lQCiricvxs30dJOFWGOWmUINjpWs6gKo8ahNgJ69HaA7mCy6sS9MxelCGZP2iVGP+LkwjThvFgLkYrq2xRNlZh+3qkQCu4T/MRkigcXjFhmTemkDT2d903vn14a0Meptorq+aRFSmCJeSlVvQX6oIlCj+QmN9Q4dBlVk7qRYEUW8a/dGcfJKP+VUQNJDkU7ooDY3WjbwndBhYZDcZzZgBE+eYcq1pw== rsa-key-20170724
+          user: ${linux:system:user:jayeshc}

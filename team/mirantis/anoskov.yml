@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        anoskov:
+          enabled: true
+          full_name: "Alexander Noskov"
+          home: /home/anoskov
+          name: anoskov
+          sudo: true
+          email: anoskov@mirantis.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        anoskov:
+          enabled: true
+          public_keys:
+          - key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCc7loPejQcoWsKhNSq2vGyQFkbNY6SsXjsjXVAF4fNsAW0Ej6w044tyJXh2BaT4XRCbP22x5nDEjgJkn/2s/uOZgGs3aat+E13YhVtHvaXxyHyoEnFQTDilXjDBxIY2BXLD2lh7WW6etk96IgwClKWhDJJynKHrkrLsO5qtljvVxePW3af56tsNg+FPJaegVifNBs5osrG5SEpCUUMtXa4ls+huK71+avYpn8uVPZ0d+j1aqYJkc2JH5s8mJ+/Siwb6EfTlDiKDzeQLeEq+959C618tEJuQ7bsnb5X+FAWX0PFNanCSjK8jLUY5Buo2L1uwRv3EneQTcPk/LM9+jaIxybjI1dQwirPNVhEZL6VCuwY2XOedmcOuuQekyMzkFzo70otC0VVGiaBIfAnOC+zNw+RQqaYXj36PUlVbCavSY84XsPVwyi6U6aN4Abi8zcq2ZmDuU8GzeQHNFWMX/ShUUfOCGiY2URB0HfPys6XfsgyrKv5eNUI3kDnZ0+xnp4tmZPjqWvHgK1JTdU9N03j/7Q/mGHM4HERct+mYGwJWro05YIureVpZT9MSNJi6eOJFyZBohimGO1GnIsoOE+OJmavbcppdhy+j3brswZwn/GcxNC2Bt0XJ36NcsXvcjbFUucZqhKl55tqxgrgKzq//OFUBJ4ZG99FA05ZFI+WFQ== anoskov@mirantis.com"
+          user: ${linux:system:user:anoskov}

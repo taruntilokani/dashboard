@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        alpas:
+          enabled: true
+          name: alpas
+          sudo: true
+          full_name: Alpa Saproo
+          home: /home/alpas
+          email: Alpa.Saproo@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        alpas:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAkCzE8qpMko7a/hW0rczKCnIVXo6e2HuvoxedEJSSSEl2WF9CLY05ungTSTMesXa++rqiWRkA9PXWHLFURLWJE/GEM+axyF8Pfua4Og6pNYlGH3sq6ekndOnK1na17ffIp6hdE6m/IlTVb9bldA9lbDz6YqRF1xPSaGG0yTVcFXByvWTRJ+fA2T1Sl98M3AZZahAOJGMuorhs7WyyT/w8ozs7A9aJcDlyvOrH419XiGoaTvD+nDa5HZDGpxfRwPGYU4EXQs3PzE5WeP556lKZ/ozXg4X8yTYNLs/uz7A742FbLBIJI+nzhrlWMm5BkVwp8UuwBZEsIrFtM8xfZ/WJ+Q==
+          user: ${linux:system:user:alpas}

@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        frigen:
+          enabled: true
+          name: frigen
+          sudo: true
+          full_name: frigen dabre
+          home: /home/frigen
+          email: frigen.dabre@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        frigen:
+          enabled: true
+          public_keys:
+           - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAn7HDVDeFc3s6Mk/7SJe1PMedBlAhpweimO9og/NUWLzgqLZurcmwzylEiDiTEGWky+VziqWIJUNfjEuLcxClhvavFm0OXBMNkCTgdS54pVtWJGsLEUwXmcNwnTs3Y4yPMbA/KU4MTQUO00Fapsg2gRZNzUsVnbYvbCVJEL+ZzshNd7pUBXQDRJCzlYxumr/lgv373dHKPao0WNtiMyCzi7YehzMJ2cBQdws8LJSaiRCX4OT4RC2M+QEgVpoL52n6CmPqVZs314Kgi/pdErgx624WsUet0G0OZ58r47Uf5Y8pHWJPCTvRTzyA+BntZb/xDGL/PvwZxiEAK34ukGJsHw==
+          user: ${linux:system:user:frigen}

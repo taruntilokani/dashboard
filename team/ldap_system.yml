@@ -1,0 +1,33 @@
+classes:
+  - system.openldap.client.people
+  - system.openldap.client.groups.mirantis
+parameters:
+  openldap:
+    client:
+      entry:
+        groups:
+          entry:
+            mirantis:
+              attr:
+                memberUid:
+                  - jenkins
+        people:
+          entry:
+            jenkins:
+              attr:
+                uid: jenkins
+                userPassword: '{CRYPT}$6$rounds=500000$jCRq9gCgYJ5l.H2b$.2qhJSSWJP0LImja2FRjmAezvzW5ha/C0LwAncW2lcjS6.ydwypm0BVI0BKrJDPtjuU/me6694YLug3UMPQfP.'
+                uidNumber: 20062
+                gidNumber: ${openldap:client:entry:groups:entry:mirantis:attr:gidNumber}
+                gecos: "jenkins"
+                givenName: jenkins
+                sn: jenkins
+                homeDirectory: /home/jenkins
+                loginShell: /bin/bash
+                mail: jenkins@ril.com
+              classes:
+                - inetOrgPerson
+                - posixAccount
+                - shadowAccount
+                - top
+              purge: true 

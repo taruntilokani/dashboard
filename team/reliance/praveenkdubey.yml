@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        praveend:
+          enabled: true
+          name: praveend
+          sudo: true
+          full_name: Praveen KDubey
+          home: /home/praveend
+          email: Praveen.K.Dubey@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        praveend:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCsLs6670l+5p45Y994a4FVtzZzvhAI128ufxAkz3r0fUP6KhHONC17cVLd9iItsOsev3HQZJMKa5z2ffjjHbkvWvXnZdiEYheA4+G2r6eu/+kAkqw6QZcahDhupIUsQRR5RTw2YBg6bCNWFkfUQfRn9gArRy7Tqs2imkFuJF5fipqZDb6rQHt8BobzCjCE1xT4YoucRcjRxE1bp0rLcPkmnxNGf+bZIngs4Fhx12CpdIFHmOkempg/YNWvtgrM1HffI1B9OGCAw0QCwlzVJLzUA2MQlW/ybiuS1jz1E/JLNL2ydWisrRfWeIJphsrHHgwj3DQMjVMnL68I14KmIy62Jw3cAx/ZvAj+AzWF8Wd2zJCChxnh6gnRfcjO5YeV31vpWMhaW5kWykTckpR4IhfyqtXrJzp6mIYYIV3EHu6LDtwnja3dSFwS5zd5NxIvT1N8cM4SKByCsSLaeqqpxi5q+2tGMy1K4LFcHE02kA9tiZUAWiLGR0dioH2wCEOi67Pb7URuGHGgfL+9U59fbtWF7KIILsWaEXHEvfifqhR10k6A8jT4wI+MK7pytS4v6YdKXysYWVIzsc42SOlFp/qlKl9Yt1gmJq/2xuQsFL8b1VXfW8m5TXq+DH+N2Qn2DcLvlx0QsZqPpA9zke1GTax6akvjAmNAvJV4mf3NHC4oLQ==
+          user: ${linux:system:user:praveend}

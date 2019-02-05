@@ -1,0 +1,20 @@
+rameters:
+  linux:
+    system:
+      user:
+        swapnil:
+          enabled: true
+          name: swapnil
+          sudo: true
+          full_name: swapnil carvalho
+          home: /home/swapnil
+          email: swapnil.carvalho@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        swapnil:
+          enabled: true
+          public_keys:
+           - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEArqoln4SKXe0AWDR6y1EoKY+WusGzvWrW/mlBtJFh3FyG7rMs8hUIWYFbfvRyaYFFIasUm+dXxmeNcXWRyixtg+QwMTOAKdGJf1Qz+KofQDtD/Hd8NuezkY3p3RS/lSI3rwUuqqJ4QIOF1vb0vPMTYLGrDVG8QN8vfSYKqcoGUXf7S4ByzPn/WicjplMFzkk+2HnIld+tS1yPu2vzeGiVVyVGScar7JPUvC7lm5cBPFQYyHwaXl+MNzKa/Un/cIRH64XYQsFdxraKfvs4iaL3SxwuO3/u2ZKM50B2R60AI34lKuVQOS8eQGzdzjYPA+q33nbF/qqCaeKdEzrfbB0Xhw==
+          user: ${linux:system:user:swapnil}

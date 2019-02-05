@@ -1,0 +1,20 @@
+rameters:
+  linux:
+    system:
+      user:
+        priyaranjan:
+          enabled: true
+          name: priyaranjan
+          sudo: true
+          full_name: priyaranjan dasgupta
+          home: /home/priyaranjan
+          email: priyaranjan2.das@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        priyaranjan:
+          enabled: true
+          public_keys:
+           - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAiok8jBcrbNpWMH8FT5NLTsRwBUoYAsIFoHutt5HobMHKxtkZv8SAL07MTay/DpWYdHI3Y8ma3lt79oGE49tqsCwkvT2R6CfGFY6GTk2UzB8RADYCUzDVioCSlyv1EvUxAUbttHHEfOt6sx6+5rPJIf5tHt5/l2+3FwvckPtP+9/WVHr9hPHi4F+B+e/6tUa7TxYqQ+0i/nMQrJB1PO8rS/JsglEARa+TIUbxSAzwjM0Co8Tzh6LHBx1y1ddyGBl8gpoSR0oJXIA4TWyDkJ8KaaDwNz9oMLDzOiZ0WaGFoZnzrS/SUBzzUE09+JiZWqopOmnXu5I9gP+PZKjWwIqVow==
+          user: ${linux:system:user:priyaranjan}

@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        msenin:
+          enabled: true
+          full_name: "Michael Senin"
+          home: /home/msenin
+          name: msenin
+          sudo: true
+          email: msenin@mirantis.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        msenin:
+          enabled: true
+          public_keys:
+          - key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDpX+7op7rYzQPPCW7tvrQR6S+/lBtNKUjLFIwIla20HpojjIlNzxNDUvHXVLULJUtOK45LBaJHCVMPKDeE9SMUxzsb5zXlmOgINseViDmIrZ3fdtbIwLFedobkaXN7hiYXvste1n10LZHUxdhNnWv2QHo184zkNxAhaWsd01ZL7V0iD6+HMQlJe9EkcPu0XXgU6rkZimlGnq15sw24W9UjQDshr40/EGNmds12QtxR08M09DYFWWnsW8/+pyK1/zn2gUwPtkfrqL5h8dOl0f4/GUJIMSZNToRhATogcPVWssWAbAs1kVe0Y+Eagtoz3T1DnZApOYwCU/eWjnBm7I1f msenin@tests-MacBook-Pro.local"
+          user: ${linux:system:user:msenin}

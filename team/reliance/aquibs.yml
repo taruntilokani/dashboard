@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        aquibs:
+          enabled: true
+          name: aquibs
+          sudo: true
+          full_name: Aquib Shaikh
+          home: /home/aquibs
+          email: Aquib.Shaikh@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        aquibs:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAgKzpRpp7uWAtqPQtdcVi0BpL70XYqkOVSiihRF+JpnRSJGEodIX1xBaxCIfrv45x2xYi7QVseMQh6hem/hj8q+ojyfHAoK02xNFxl8V4DjxQqlhcS87me/DQjScNcB+3GHFxHlna3SCFnoVJjaOD7aiDPfF6jhlqOhcAD5GVaO5Ufii2Kl4sLmYtxGOSk3bSFdA28jXyMI9WvzURoaeE17GeDne5IDnQ4mpoIuyFPxaClm+NOggPVEeab3wj/MPg1wJj0br+pt/Kt2+mDM7GYZ/U1nHZv8jjYv3m/IVfjUdEmRQwpTT0+Od6KR+C+GOvV2M/zaiSiF27jIeCgDbegQ== 
+          user: ${linux:system:user:aquibs}

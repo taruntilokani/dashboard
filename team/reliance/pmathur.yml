@@ -1,0 +1,19 @@
+parameters:
+  linux:
+    system:
+      user:
+        pmathur:
+          enabled: true
+          name: pmathur
+          sudo: true
+          full_name: Pratul Mathur
+          home: /home/pmathur
+          email: pratul.mathur@ril.com
+  openssh:
+    server:
+      user:
+        pmathur:
+          enabled: true
+          public_keys:
+          - key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAgWGRGAXSgIhU42N6wqkQcPOUBoel7vrPH0AIENVz5HS8uKiWa0WzJnLaqwQxD/fpEGj5xlgyNztWisdam/S+ZgSl3XUbCCBS7iaxRj2qJIFctnEHXso4Gc4sry3OASNfabg6lFawddmLeODOMRWc9PAjsldFyJIkpT3yoCtTn7XgXiyzV5LBU6SXmaW+DpWh5WKYHj6aaILge0MZ3QZ4g+4SSl0YrxIfSw2qv3Y3QR6JJSN8fQZXOVSxVYnHUlpCTxNTe7ZmKgPRvAaZJv+0iHaD8az4ZB/+dDEHGeP6iIWn8pjarMdaSh4aVae4yEk1/S0UDFhhjJX424ek5jpBbQ== rsa-key-20180508"
+          user: ${linux:system:user:pmathur}

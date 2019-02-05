@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        imrank:
+          enabled: true
+          name: imrank
+          sudo: true
+          full_name: Imran Khan
+          home: /home/imrank
+          email: Imran14.Khan@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        imrank:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAhJvUPPU01P+/7GZuJWjJBDoR6oLmdGZEUAE6hiYAE3d+nKPk7sINBhmunhEu3SHM/5qFG+JgFHrImaprR1wVYrOMSFsaF5RDT58ET1u0sJ+831BN/grrnrGIWj/6NmnszAjZ0sZiN+Z1b3ePpjbzlvdSE2vAu9U5IX/l7wmLZANJKx79UMlV7cfLX/xUtQ/4Z509UxWlmT9Hg7odbm+GYRPpQy4QAneVjylRNSoi0m10asFwNEo9uRryRl0BbtGDgRT3iVlUFUL7SyHBnUfwKBaIhLDAa2bZBlsRPfguaTRFJF2qn3cQj1dt9u9ZfI+ndturTSZHqj0RBeyXcNJYRQ==
+          user: ${linux:system:user:imrank}

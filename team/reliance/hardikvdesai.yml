@@ -1,0 +1,20 @@
+parameters:
+  linux:
+    system:
+      user:
+        hardikvd:
+          enabled: true
+          name: hardikvd
+          sudo: true
+          full_name: Hardikv Desai
+          home: /home/hardikvd
+          email: Hardikv.Desai@ril.com
+  openssh:
+    server:
+      enabled: true
+      user:
+        hardikvd:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA4qD45RA5du2T+LtBzC76HPP9P9zToLntu9T8m5bRYe4wNJC2BBV95aTkvaCWh0NlPdfByUeLlwBCT/nB3BcM67T1ZK2wZycHGhRXNFWJ+XLHOqSarDrfKGisx5IziXLSwvJSLtoH+2oyS3s0nkniYtldKZzImv5U/sMsae/LNd4oeuIJlbeE66cF0YeXD87otsE+rMsODeGhomXrJjEg5A4P1f3XtnPt3+GTjiQST4f1gd8JY8Kztafj5qL5MN/TH0zI95USOQj6xaDT0RFT6v7diutWeJM+VxhpRbR6S/jwFEKDVurTpgJhh/euInS9KWv0YR5N3gvHzUattHx00Q==
+          user: ${linux:system:user:hardikvd}
